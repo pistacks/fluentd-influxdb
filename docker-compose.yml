@@ -26,6 +26,18 @@ services:
       - /influxdb/data:/var/lib/influxdb'
     networks:
       - app
+    
+  web:
+    image: nginx
+    ports:
+      - 80:80
+    networks:
+      - app
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: docker.{{index .Service.Labels "com.docker.stack.namespace"}}.{{.Service.Name}}
 
 networks:
   app:
