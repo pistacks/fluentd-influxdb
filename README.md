@@ -11,3 +11,7 @@ $ docker run \
   python:alpine echo GET / Mozilla hello
 GET / Mozilla hello again
 ```
+
+## Resources
+
+- https://docs.docker.com/config/containers/logging/fluentd/
