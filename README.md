@@ -17,3 +17,4 @@ GET / Mozilla hello again
 - https://docs.docker.com/config/containers/logging/fluentd/
 - https://docs.fluentd.org/v/0.12/articles/docker-logging-efk-compose
 - https://github.com/kzk/docker-compose-efk
+- https://docs.docker.com/config/containers/logging/fluentd/
